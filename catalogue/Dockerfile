@@ -5,8 +5,7 @@ EXPOSE 8080
 WORKDIR /opt/server
 
 COPY package.json /opt/server/
-
-#npm install get the dependencies of the node js project
+#npm install get the dependencies if node js project
 RUN npm install
 
 COPY server.js /opt/server/
